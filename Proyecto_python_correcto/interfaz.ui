@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1156</width>
+    <height>771</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 170, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>1161</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="visor_page">
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(0,0,0);
+font: 100 12pt&quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+	background-color: rgb(181, 217, 227);
+border-radius:15px;
+color: rgb(0, 0, 127);
+font:100 12pt&quot;Arial Black&quot;;
+}
+QLineEdit{
+background-color: rgb(237, 255, 255);
+color: rgb(0, 0, 0);
+border:0px;
+border-bottom:2px solid rgb(0,0,0);
+font:80 16pt &quot;Arial Black&quot;;
+}</string>
+     </property>
+     <attribute name="title">
+      <string>Visor de placas</string>
+     </attribute>
+     <widget class="QLabel" name="camara_visual">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>500</width>
+        <height>350</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>500</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>500</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="registrar_video_placa_bt">
+      <property name="geometry">
+       <rect>
+        <x>790</x>
+        <y>280</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Registrar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="capturar_bt">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>490</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Capturar</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="registra_archivo_bt">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>650</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Registrar</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>10</y>
+        <width>361</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Visor de placas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="explorar_imagen_bt">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>410</y>
+        <width>350</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Abrir explorador de archivos</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>490</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>150</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Encender</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>120</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Número de placa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>460</y>
+        <width>301</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Número de placa&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lcd_video_placa">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>170</y>
+        <width>500</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lcd_archivo_placa">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>510</y>
+        <width>500</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+     </widget>
+     <zorder>camara_visual</zorder>
+     <zorder>capturar_bt</zorder>
+     <zorder>registra_archivo_bt</zorder>
+     <zorder>registrar_video_placa_bt</zorder>
+     <zorder>label_2</zorder>
+     <zorder>explorar_imagen_bt</zorder>
+     <zorder>pushButton_5</zorder>
+     <zorder>label_4</zorder>
+     <zorder>label_5</zorder>
+     <zorder>lcd_video_placa</zorder>
+     <zorder>lcd_archivo_placa</zorder>
+    </widget>
+    <widget class="QWidget" name="base_page">
+     <property name="styleSheet">
+      <string notr="true">QTableWidget{
+background-color:rgb(255,255,255);
+color:rgb(0,0,0);
+gridline-color:rgb(0,0,0);
+font-size:12pt;
+color:#000000;
+ }
+
+QHeaderView::section{
+background-color:rgb(255,255,255);
+border:1px solid rgb(0,0,0);
+font-size: 12pt;
+}
+
+QTableWidget QTableCornerButton :: section{
+background-color:rgb(0,0,0);
+border:1px solid rgb(0,206,151);
+}
+QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(0,0,0);
+font: 100 12pt&quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+	background-color: rgb(181, 217, 227);
+border-radius:15px;
+color: rgb(0, 0, 127);
+font:100 12pt&quot;Arial Black&quot;;
+}</string>
+     </property>
+     <attribute name="title">
+      <string>Base de datos</string>
+     </attribute>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>0</y>
+        <width>281</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt; font-weight:600;&quot;&gt;Base de datos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>1071</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>Placa</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Fecha</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Hora de entrada</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Hora de salida</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Monto de cobro</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Pago</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="calcular_cobro_bt">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>540</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(0,0,0);
+font: 100 12pt&quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+	background-color: rgb(181, 217, 227);
+border-radius:15px;
+color: rgb(0, 0, 127);
+font:100 12pt&quot;Arial Black&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Calcular cobro</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pago_hecho_bt">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>540</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(0,0,0);
+font: 100 12pt&quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+	background-color: rgb(181, 217, 227);
+border-radius:15px;
+color: rgb(0, 0, 127);
+font:100 12pt&quot;Arial Black&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Pago realizado</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="actualizar_tabla_bt">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>650</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(0,0,0);
+font: 100 12pt&quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+	background-color: rgb(181, 217, 227);
+border-radius:15px;
+color: rgb(0, 0, 127);
+font:100 12pt&quot;Arial Black&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Actualizar tabla</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="cerrar_bt">
+    <property name="geometry">
+     <rect>
+      <x>1110</x>
+      <y>0</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+color: rgb(0,0,0);
+font: 100 12pt&quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+background-color: rgb(234, 0, 0);
+border-radius:15px;
+color:rgb(255,255,255);
+font:100 12pt&quot;Arial Black&quot;;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>x</string>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>13</width>
+      <height>16</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_barra">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <zorder>frame_barra</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>cerrar_bt</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
